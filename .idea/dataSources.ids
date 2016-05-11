@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="H2 - jdbc:h2:tcp://192.168.1.235:9092/main" uuid="ed348586-f311-4278-a6a6-44ebd8f5c08d">
+    <database-info product="H2" version="1.3.176 (2014-04-05)" jdbc-version="4.0" driver-name="H2 JDBC Driver" driver-version="1.3.176 (2014-04-05)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <schema name="PUBLIC" catalog="MAIN "/>
+  </data-source>
+</component>
