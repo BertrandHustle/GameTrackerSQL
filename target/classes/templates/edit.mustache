@@ -7,12 +7,16 @@
     {{#game}}
 
         {{game}}
-        <input type="test" placeholder="id" name="id"/>
-        <input type="text" placeholder="title" name="title"/>
-        <input type="text" placeholder="platform" name="platform"/>
-        <input type="text" placeholder="genre" name="genre"/>
-        <input type="text" placeholder="release year" name="releaseYear"/>
-        <button type="submit" name="submit">Submit</button>
+        <form action="/edit" method="post">
+
+            <input type="text" placeholder="id" name="id">
+            <input type="text" placeholder="name" name="name"/>
+            <input type="text" placeholder="platform" name="platform"/>
+            <input type="text" placeholder="genre" name="genre"/>
+            <input type="text" placeholder="release year" name="releaseYear"/>
+            <button type="submit" name="submit">Submit</button>
+
+        </form>
 
     {{/game}}
 
