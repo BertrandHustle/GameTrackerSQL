@@ -1,11 +1,11 @@
 package com.theironyard;
 
+import com.theironyard.GameTrackerService.GameTrackerService;
 import org.h2.tools.Server;
 import spark.ModelAndView;
 import spark.Session;
 import spark.Spark;
 import spark.template.mustache.MustacheTemplateEngine;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -26,20 +26,26 @@ public class Main {
         Connection connection = DriverManager.getConnection(jdbcUrl, "", null);
 
         //creates/configures web service
+        GameTrackerService gts =  new GameTrackerService(connection);
 
+        //init database
+        gts.initDatabase();
 
-        Spark.init();
+        //Spark.init();
         Spark.get(
                 "/",
                 ((request, response) -> {
                     User user = getUserFromSession(request.session());
 
+                    //returns arraylist of all games
+                    gts.selectGame();
+
                     HashMap m = new HashMap<>();
                     if (user == null) {
-                        return new ModelAndView(m, "login.html");
+                        return new ModelAndView(m, "login.mustache");
                     }
                     else {
-                        return new ModelAndView(user, "home.html");
+                        return new ModelAndView(user, "home.mustache");
                     }
                 }),
                 new MustacheTemplateEngine()
@@ -76,12 +82,23 @@ public class Main {
                     int gameYear = Integer.valueOf(request.queryParams("gameYear"));
                     Game game = new Game(gameName, gameGenre, gamePlatform, gameYear);
 
-                    user.games.add(game);
+                    //inserts game into database
+                    gts.insertGame(game);
 
                     response.redirect("/");
                     return "";
                 })
         );
+
+        Spark.post(
+                "/edit",
+                (request, response) -> {
+
+                    
+
+                }
+        );
+
         Spark.post(
                 "/logout",
                 ((request, response) -> {

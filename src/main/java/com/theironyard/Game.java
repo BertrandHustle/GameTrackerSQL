@@ -12,4 +12,20 @@ public class Game {
         this.platform = platform;
         this.releaseYear = releaseYear;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public String getPlatform() {
+        return platform;
+    }
+
+    public int getReleaseYear() {
+        return releaseYear;
+    }
 }

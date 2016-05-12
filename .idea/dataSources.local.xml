@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="H2 - jdbc:h2:tcp://192.168.1.235:9092/main" uuid="ed348586-f311-4278-a6a6-44ebd8f5c08d">
+    <data-source name="H2 - jdbc:h2:tcp://192.168.1.235:9092/main" uuid="37085966-a4d5-4720-aac8-772f41b80d61">
       <secret-storage>master_key</secret-storage>
       <schema-pattern>MAIN&amp;nbsp;.PUBLIC</schema-pattern>
       <default-schemas>MAIN&amp;nbsp;.PUBLIC</default-schemas>

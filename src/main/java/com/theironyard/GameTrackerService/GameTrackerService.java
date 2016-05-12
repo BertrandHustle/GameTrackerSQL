@@ -2,9 +2,9 @@ package com.theironyard.GameTrackerService;
 
 import com.theironyard.Game;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
+
 
 public class GameTrackerService {
 
@@ -17,23 +17,51 @@ public class GameTrackerService {
     //init database
     public void initDatabase() throws SQLException {
         Statement statement = connection.createStatement();
+        statement.execute("CREATE TABLE IF NOT EXISTS game (id IDENTITY, name VARCHAR , platform VARCHAR, genre VARCHAR, releaseYear INT)");
     }
 
-    /*
-
     //inserts game into database
-    public insertGame(Game game) throws SQLException {
-
+    public void insertGame(Game game) throws SQLException {
+        PreparedStatement statement = connection.prepareStatement("INSERT INTO game VALUES (NULL, ?, ?, ?, ?)");
+        statement.setString(1, game.getName());
+        statement.setString(2, game.getPlatform());
+        statement.setString(3, game.getGenre());
+        statement.setInt(4, game.getReleaseYear());
+        statement.executeUpdate();
     }
 
     //delete game from database
-    public deleteGame(Game game) throws SQLException{
+    public void deleteGame(Game game) throws SQLException{
+        PreparedStatement statement = connection.prepareStatement("DELETE FROM game WHERE id = ?");
 
     }
 
-    //select game(s) from database
-    public selectGame(Game game) throws SQLException{
+    //update game info
+    public void updateGame(Game game) throws SQLException{
+        PreparedStatement statement = connection.prepareStatement("UPDATE game SET WHERE id = ?");
+    }
+
+    //select game(s) from database and return arraylist of Games
+    public ArrayList<Game> selectGame() throws SQLException{
+        PreparedStatement statement = connection.prepareStatement("SELECT * FROM game");
+        ResultSet resultSet = statement.executeQuery();
+        ArrayList<Game> games = new ArrayList<>();
+
+        while(resultSet.next()){
+
+            Game game = new Game(
+                    resultSet.getString("name"),
+                    resultSet.getString("platform"),
+                    resultSet.getString("genre"),
+                    resultSet.getInt("releaseYear")
+            );
+
+            games.add(game);
+
+        }
+
+        return games;
 
     }
-    */
+
 }

@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<form action="/edit" method="post">
+
+    {{#form}}
+
+        {{form}}
+        <input type="hidden" name="change" value={{id}}>
+        <input type="text" placeholder="title" name="title"/>
+        <input type="text" placeholder="platform" name="platform"/>
+        <input type="text" placeholder="genre" name="genre"/>
+        <input type="text" placeholder="release year" name="releaseYear"/>
+        <button type="submit" name="submit">Submit</button>
+
+    {{/form}}
+
+</form>
+</body>
+</html>
