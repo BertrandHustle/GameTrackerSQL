@@ -5,6 +5,7 @@ public class Game {
     String genre;
     String platform;
     int releaseYear;
+    private int id = 0;
 
     public Game(String name, String genre, String platform, int releaseYear) {
         this.name = name;
@@ -27,5 +28,13 @@ public class Game {
 
     public int getReleaseYear() {
         return releaseYear;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

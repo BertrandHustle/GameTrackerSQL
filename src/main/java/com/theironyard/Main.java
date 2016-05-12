@@ -12,6 +12,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import static spark.Spark.halt;
+
 public class Main {
 
     static HashMap<String, User> users = new HashMap<>();
@@ -78,7 +80,7 @@ public class Main {
                     User user = getUserFromSession(request.session());
                     if (user == null) {
                         //throw new Exception("com.theironyard.User is not logged in");
-                        Spark.halt(403);
+                        halt(403);
                     }
 
                     String gameName = request.queryParams("gameName");
@@ -95,19 +97,19 @@ public class Main {
                 })
         );
 
-        Spark.get(
+        Spark.post(
                 "/delete",
                 (request, response) -> {
 
-                    //Game game = new Game()
-
-                    //gts.deleteGame();
+                    int ID = Integer.parseInt(request.queryParams("number"));
+                    gts.deleteGame(ID + 1);
+                    response.redirect("/");
+                    halt();
                     return null;
-
                 }
         );
 
-        Spark.post(
+        Spark.get(
                 "/edit",
                 (request, response) -> {
 

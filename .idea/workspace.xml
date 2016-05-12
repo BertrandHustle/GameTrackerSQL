@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5277da7c-d254-4bda-b2cd-785738fb1ba2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/main .h2.db" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/data/main.h2.db" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/theironyard/Game.class" afterPath="$PROJECT_DIR$/target/classes/com/theironyard/Game.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/theironyard/GameTrackerService/GameTrackerService.class" afterPath="$PROJECT_DIR$/target/classes/com/theironyard/GameTrackerService/GameTrackerService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/theironyard/Main.class" afterPath="$PROJECT_DIR$/target/classes/com/theironyard/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/theironyard/User.class" afterPath="$PROJECT_DIR$/target/classes/com/theironyard/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/theironyard/Game.java" afterPath="$PROJECT_DIR$/src/main/java/com/theironyard/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/theironyard/GameTrackerService/GameTrackerService.java" afterPath="$PROJECT_DIR$/src/main/java/com/theironyard/GameTrackerService/GameTrackerService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/theironyard/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/theironyard/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/edit.mustache" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/home.mustache" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.mustache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/home.mustache" afterPath="$PROJECT_DIR$/target/classes/templates/home.mustache" />
     </list>
     <ignored path="GameTrackerSQL.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,6 +37,12 @@
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -48,20 +53,24 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="292">
+              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding>
-                <element signature="e#393#394#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+            <state relative-caret-position="183">
+              <caret line="104" column="41" selection-start-line="104" selection-start-column="41" selection-end-line="104" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MAIN.PUBLIC.GAME" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MAIN.PUBLIC.GAME" pinned="false" current-in-tab="true">
         <entry file="dbDummy://dbtable:/e85bdb77/61a95eba-db3c-4bfb-8231-c7f661c2ff52/MAIN.PUBLIC.GAME">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -97,15 +106,15 @@
       <file leaf-file-name="GameTrackerService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/GameTrackerService/GameTrackerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="-390">
+              <caret line="0" column="43" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1463075129000" expanded="true" signature="478:588" placeholder="CREATE TABLE... IF" />
-                <marker date="1463075129000" expanded="true" signature="779:821" placeholder="INSERT INTO game... " />
-                <marker date="1463075129000" expanded="true" signature="1226:1255" placeholder="DELETE FROM " />
-                <marker date="1463075129000" expanded="true" signature="1416:1444" placeholder="UPDATE game " />
-                <marker date="1463075129000" expanded="true" signature="1649:1667" placeholder="SELECT * FRO... game" />
+                <marker date="1463077161000" expanded="true" signature="458:568" placeholder="CREATE TABLE... IF" />
+                <marker date="1463077161000" expanded="true" signature="740:782" placeholder="INSERT INTO game... " />
+                <marker date="1463077161000" expanded="true" signature="1365:1394" placeholder="DELETE FROM " />
+                <marker date="1463077161000" expanded="true" signature="1661:1689" placeholder="UPDATE game " />
+                <marker date="1463077161000" expanded="true" signature="1894:1912" placeholder="SELECT * FRO... game" />
               </folding>
             </state>
           </provider>
@@ -114,8 +123,8 @@
       <file leaf-file-name="home.mustache" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
-              <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+            <state relative-caret-position="195">
+              <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -151,20 +160,20 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/home.mustache" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.mustache" />
         <option value="$PROJECT_DIR$/src/main/java/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/GameTrackerMethods.java" />
         <option value="$PROJECT_DIR$/src/main/java/GameTrackerService/GameTrackerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/theironyard/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/theironyard/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/edit.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/37085966-a4d5-4720-aac8-772f41b80d61/console_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/37085966-a4d5-4720-aac8-772f41b80d61/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/37085966-a4d5-4720-aac8-772f41b80d61/console.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/edit.mustache" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.mustache" />
+        <option value="$PROJECT_DIR$/src/main/java/com/theironyard/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/theironyard/GameTrackerService/GameTrackerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/theironyard/Main.java" />
       </list>
@@ -199,8 +208,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="28" />
-    <option name="y" value="38" />
+    <option name="x" value="38" />
+    <option name="y" value="35" />
     <option name="width" value="1142" />
     <option name="height" value="678" />
   </component>
@@ -278,14 +287,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -804,15 +805,15 @@
       <updated>1462992061236</updated>
       <workItem from="1462992068140" duration="9212000" />
       <workItem from="1463057699022" duration="1251000" />
-      <workItem from="1463060358577" duration="5022000" />
+      <workItem from="1463060358577" duration="6848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15485000" />
+    <option name="totallyTimeSpent" value="17311000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="38" width="1142" height="678" extended-state="0" />
+    <frame x="38" y="35" width="1142" height="678" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -827,13 +828,13 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25272727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28181818" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2009091" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28181818" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993174" sideWeight="0.49636364" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3105802" sideWeight="0.49636364" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -862,11 +863,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/theironyard/Main.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="resultSet" language="JAVA" custom="" />
+        <watch expression="ID" language="JAVA" custom="com.sun.xml.internal.bind.v2.model.core.ID" />
       </configuration>
     </watches-manager>
   </component>
@@ -880,7 +889,11 @@
         <state relative-caret-position="225">
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
-            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -909,11 +922,11 @@
           <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1463075129000" expanded="true" signature="478:588" placeholder="CREATE TABLE... IF" />
-            <marker date="1463075129000" expanded="true" signature="779:821" placeholder="INSERT INTO game... " />
-            <marker date="1463075129000" expanded="true" signature="1226:1255" placeholder="DELETE FROM " />
-            <marker date="1463075129000" expanded="true" signature="1416:1444" placeholder="UPDATE game " />
-            <marker date="1463075129000" expanded="true" signature="1649:1667" placeholder="SELECT * FRO... game" />
+            <marker date="1463077161000" expanded="true" signature="458:568" placeholder="CREATE TABLE... IF" />
+            <marker date="1463077161000" expanded="true" signature="740:782" placeholder="INSERT INTO game... " />
+            <marker date="1463077161000" expanded="true" signature="1365:1394" placeholder="DELETE FROM " />
+            <marker date="1463077161000" expanded="true" signature="1661:1689" placeholder="UPDATE game " />
+            <marker date="1463077161000" expanded="true" signature="1894:1912" placeholder="SELECT * FRO... game" />
           </folding>
         </state>
       </provider>
@@ -955,7 +968,11 @@
         <state relative-caret-position="225">
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
-            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -984,11 +1001,11 @@
           <caret line="40" column="83" selection-start-line="40" selection-start-column="83" selection-end-line="40" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1463075129000" expanded="true" signature="478:588" placeholder="CREATE TABLE... IF" />
-            <marker date="1463075129000" expanded="true" signature="779:821" placeholder="INSERT INTO game... " />
-            <marker date="1463075129000" expanded="true" signature="1226:1255" placeholder="DELETE FROM " />
-            <marker date="1463075129000" expanded="true" signature="1416:1444" placeholder="UPDATE game " />
-            <marker date="1463075129000" expanded="true" signature="1649:1667" placeholder="SELECT * FRO... game" />
+            <marker date="1463077161000" expanded="true" signature="458:568" placeholder="CREATE TABLE... IF" />
+            <marker date="1463077161000" expanded="true" signature="740:782" placeholder="INSERT INTO game... " />
+            <marker date="1463077161000" expanded="true" signature="1365:1394" placeholder="DELETE FROM " />
+            <marker date="1463077161000" expanded="true" signature="1661:1689" placeholder="UPDATE game " />
+            <marker date="1463077161000" expanded="true" signature="1894:1912" placeholder="SELECT * FRO... game" />
           </folding>
         </state>
       </provider>
@@ -1121,41 +1138,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e85bdb77/61a95eba-db3c-4bfb-8231-c7f661c2ff52/MAIN.PUBLIC.GAME">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="e#393#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/edit.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1168,36 +1154,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/edit.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+        <state relative-caret-position="195">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/GameTrackerService/GameTrackerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="-390">
+          <caret line="0" column="43" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1463075129000" expanded="true" signature="478:588" placeholder="CREATE TABLE... IF" />
-            <marker date="1463075129000" expanded="true" signature="779:821" placeholder="INSERT INTO game... " />
-            <marker date="1463075129000" expanded="true" signature="1226:1255" placeholder="DELETE FROM " />
-            <marker date="1463075129000" expanded="true" signature="1416:1444" placeholder="UPDATE game " />
-            <marker date="1463075129000" expanded="true" signature="1649:1667" placeholder="SELECT * FRO... game" />
+            <marker date="1463077161000" expanded="true" signature="458:568" placeholder="CREATE TABLE... IF" />
+            <marker date="1463077161000" expanded="true" signature="740:782" placeholder="INSERT INTO game... " />
+            <marker date="1463077161000" expanded="true" signature="1365:1394" placeholder="DELETE FROM " />
+            <marker date="1463077161000" expanded="true" signature="1661:1689" placeholder="UPDATE game " />
+            <marker date="1463077161000" expanded="true" signature="1894:1912" placeholder="SELECT * FRO... game" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/theironyard/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        <state relative-caret-position="183">
+          <caret line="104" column="41" selection-start-line="104" selection-start-column="41" selection-end-line="104" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e85bdb77/61a95eba-db3c-4bfb-8231-c7f661c2ff52/MAIN.PUBLIC.GAME">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
