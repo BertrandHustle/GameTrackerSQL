@@ -17,7 +17,9 @@ public class GameTrackerService {
     //init database
     public void initDatabase() throws SQLException {
         Statement statement = connection.createStatement();
-        statement.execute("CREATE TABLE IF NOT EXISTS game (id IDENTITY, name VARCHAR , platform VARCHAR, genre VARCHAR, releaseYear INT)");
+        boolean result = statement.execute("CREATE TABLE IF NOT EXISTS game (id IDENTITY, name VARCHAR , platform VARCHAR, genre VARCHAR, releaseYear INT)");
+        int i = 0;
+
     }
 
     //inserts game into database
@@ -42,7 +44,7 @@ public class GameTrackerService {
     }
 
     //select game(s) from database and return arraylist of Games
-    public ArrayList<Game> selectGame() throws SQLException{
+    public ArrayList<Game> selectGames() throws SQLException{
         PreparedStatement statement = connection.prepareStatement("SELECT * FROM game");
         ResultSet resultSet = statement.executeQuery();
         ArrayList<Game> games = new ArrayList<>();

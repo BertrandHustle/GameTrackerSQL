@@ -9,6 +9,7 @@ import spark.template.mustache.MustacheTemplateEngine;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Main {
@@ -38,14 +39,18 @@ public class Main {
                     User user = getUserFromSession(request.session());
 
                     //returns arraylist of all games
-                    gts.selectGame();
+
+                    ArrayList<Game> games = new ArrayList<>();
+                    games = gts.selectGames();
 
                     HashMap m = new HashMap<>();
                     if (user == null) {
                         return new ModelAndView(m, "login.mustache");
                     }
                     else {
-                        return new ModelAndView(user, "home.mustache");
+                        m.put("games", games);
+                        m.put("user", user);
+                        return new ModelAndView(m, "home.mustache");
                     }
                 }),
                 new MustacheTemplateEngine()
@@ -90,12 +95,23 @@ public class Main {
                 })
         );
 
+        Spark.get(
+                "/delete",
+                (request, response) -> {
+
+                    //Game game = new Game()
+
+                    //gts.deleteGame();
+                    return null;
+
+                }
+        );
+
         Spark.post(
                 "/edit",
                 (request, response) -> {
 
-                    
-
+                    return null;
                 }
         );
 
