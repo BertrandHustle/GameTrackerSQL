@@ -18,8 +18,6 @@ public class GameTrackerService {
 
     }
 
-    //todo: fix id generation
-
     //inserts game into database
     public void insertGame(Game game) throws SQLException {
         PreparedStatement statement = connection.prepareStatement("INSERT INTO game VALUES (NULL, ?, ?, ?, ?)");
@@ -79,6 +77,32 @@ public class GameTrackerService {
         }
 
         return games;
+
+    }
+
+    public ArrayList<Game> searchGame(String query) throws SQLException {
+
+        PreparedStatement statement = connection.prepareStatement("SELECT * FROM game WHERE name=?");
+        statement.setString(1, query);
+
+        ResultSet resultSet = statement.executeQuery();
+        ArrayList<Game> singleGame = new ArrayList<>();
+        while(resultSet.next()){
+
+            Game game = new Game(
+
+                    resultSet.getInt("id"),
+                    resultSet.getString("name"),
+                    resultSet.getString("platform"),
+                    resultSet.getString("genre"),
+                    resultSet.getInt("releaseYear")
+            );
+
+            singleGame.add(game);
+
+        }
+
+        return singleGame;
 
     }
 

@@ -138,6 +138,22 @@ public class Main {
                     return "";
                 })
         );
+
+        Spark.get(
+                "/search",
+                (request, response) -> {
+                    HashMap hash = new HashMap();
+
+                    String query = request.queryParams("search");
+                    ArrayList<Game> searchGame = new ArrayList<>();
+
+                    searchGame = gts.searchGame(query);
+
+                    hash.put("games", searchGame);
+                    return new ModelAndView(hash, "home.mustache");
+                },
+        new MustacheTemplateEngine()
+        );
     }
 
     static User getUserFromSession(Session session) {
