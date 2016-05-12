@@ -83,11 +83,12 @@ public class Main {
                         halt(403);
                     }
 
+                    int gameId = 0;
                     String gameName = request.queryParams("gameName");
                     String gameGenre = request.queryParams("gameGenre");
                     String gamePlatform = request.queryParams("gamePlatform");
                     int gameYear = Integer.valueOf(request.queryParams("gameYear"));
-                    Game game = new Game(gameName, gameGenre, gamePlatform, gameYear);
+                    Game game = new Game(gameId, gameName, gameGenre, gamePlatform, gameYear);
 
                     //inserts game into database
                     gts.insertGame(game);
@@ -101,20 +102,31 @@ public class Main {
                 "/delete",
                 (request, response) -> {
 
-                    int ID = Integer.parseInt(request.queryParams("number"));
-                    gts.deleteGame(ID + 1);
+                    int ID = Integer.parseInt(request.queryParams("id"));
+                    gts.deleteGame(ID);
                     response.redirect("/");
                     halt();
                     return null;
                 }
         );
 
-        Spark.get(
+        Spark.post(
                 "/edit",
                 (request, response) -> {
 
+                    int ID = Integer.parseInt(request.queryParams("id"));
+                    String name = request.queryParams("name");
+                    String genre = request.queryParams("genre");
+                    String platform = request.queryParams("platform");
+                    int releaseYear = Integer.parseInt(request.queryParams("releaseYear"));
+
+                    gts.updateGame(ID, name, genre, platform, releaseYear);
+                    response.redirect("/");
+                    halt();
                     return null;
+
                 }
+
         );
 
         Spark.post(

@@ -18,6 +18,8 @@ public class GameTrackerService {
 
     }
 
+    //todo: fix id generation
+
     //inserts game into database
     public void insertGame(Game game) throws SQLException {
         PreparedStatement statement = connection.prepareStatement("INSERT INTO game VALUES (NULL, ?, ?, ?, ?)");
@@ -31,6 +33,7 @@ public class GameTrackerService {
         ResultSet resultSet = statement.getGeneratedKeys();
         resultSet.next();
         game.setId(resultSet.getInt(1));
+        System.out.println(game.getId());
     }
 
     //delete game from database
@@ -44,8 +47,14 @@ public class GameTrackerService {
     }
 
     //update game info
-    public void updateGame(Game game) throws SQLException{
-        PreparedStatement statement = connection.prepareStatement("UPDATE game SET WHERE id = ?");
+    public void updateGame(int id, String name, String platform, String genre, int releaseYear) throws SQLException{
+        PreparedStatement statement = connection.prepareStatement("UPDATE game SET name = ?, platform = ?, genre = ?, releaseYear = ? WHERE id = ?");
+        statement.setString(1, name);
+        statement.setString(2, platform);
+        statement.setString(3, genre);
+        statement.setInt(4, releaseYear);
+        statement.setInt(5, id);
+        statement.executeUpdate();
     }
 
     //select game(s) from database and return arraylist of Games
@@ -57,6 +66,8 @@ public class GameTrackerService {
         while(resultSet.next()){
 
             Game game = new Game(
+
+                    resultSet.getInt("id"),
                     resultSet.getString("name"),
                     resultSet.getString("platform"),
                     resultSet.getString("genre"),

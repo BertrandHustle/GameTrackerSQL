@@ -28,17 +28,24 @@
     {{#games}}
         <li>{{name}} - {{genre}} - {{platform}} - {{releaseYear}}
             <form action="/delete" method="post">
-                <input type="hidden" name="number" value="{{id}}">
+                <input type="hidden" name="id" value="{{id}}">
                 <button type="submit" name="delete">Delete</button>
-            </form>
-
-            <form action="/edit" method="get">
-                <input type="hidden" name="number" value="{{id}}">
-                <button type="submit" name="edit">Edit</button>
             </form>
         </li>
     {{/games}}
 </ol>
+
+<form action="/edit" method="post">
+
+        <input type="text" placeholder="id" name="id">
+        <input type="text" placeholder="name" name="name"/>
+        <input type="text" placeholder="platform" name="platform"/>
+        <input type="text" placeholder="genre" name="genre"/>
+        <input type="text" placeholder="release year" name="releaseYear"/>
+        <button type="submit" name="submit">Submit</button>
+
+</form>
+
 </body>
 </html></title>
 </head>
